@@ -1,0 +1,129 @@
+:root {
+    --left-width: 50%;
+    --right-width: 50%;
+    --button-height: 2rem;
+    --main-color: rgb(250, 250, 250);
+    --execute-color: #ff8d00;
+    --bg-color: #adadad;
+}
+
+@font-face {
+    font-family: 'Digital';
+    src: URL('digital-7-webfont.woff');
+}
+
+body {
+    background-color: lightcoral;
+}
+
+main {
+    margin-top: 3rem;
+}
+
+.border {
+    border: 1px solid var(--main-color);
+}
+
+#main_container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#calculator {
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid black;
+    padding: 1.8rem 2rem;
+    border-radius: 20px;
+    background-color: var(--bg-color);
+}
+
+#output {
+    width: 100%;
+}
+
+span#number_output {
+    font-family: 'Digital', Fallback, sans-serif;
+    font-size: 4rem;
+    display: block;
+    text-align: right;
+    min-height: 1.5rem;
+    padding: 0.5rem;
+    background-color: lightcyan;
+    border-radius: 6px;
+    border: 1px;
+}
+
+#number_panel {
+    margin-top: 2rem;
+    display: flex;
+    align-content: flex-start;
+    padding-right: 1rem;
+    width: var(--right-width);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+#number_panel button {
+    flex-basis: 30%;
+    flex-grow: 1;
+    height: var(--button-height);
+    background-color: var(--main-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#operation_panel {
+    margin-top: 2rem;
+    display: flex;
+    align-content: flex-start;
+    width: var(--right-width);
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+#operation_panel button {
+    width: 100%;
+    height: var(--button-height);
+    background-color: var(--main-color);
+}
+
+#execute_panel button,
+#number_panel button,
+#operation_panel button {
+    border-radius: 8px;
+    border: 1px solid lightslategray;
+    margin: 2px;
+}
+
+#operation_panel button {
+    font-size: 1.4rem;
+}
+
+#execute_panel button:hover,
+#number_panel button:hover,
+#operation_panel button:hover {
+    background-color: gold;
+}
+
+#execute_panel {
+    width: 100%;
+}
+
+#execute_panel button {
+    width: 100%;
+    /*height: var(--button-height);*/
+    margin-top: 1rem;
+    background-color: var(--execute-color);
+    color: white;
+    /*font-weight: bold;*/
+    font-size: 2rem;
+}
+
+
+/*
+#number_panel div button:last-child {
+    width: calc(var(--left-width) + var(--right-width));
+    margin-top: 1rem;
+}*/

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="img/fav.png" />
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/new.css">
+</head>
+
+<body>
+    <main>
+        <div id="main_container">
+            <div id="calculator">
+                <section id="output">
+                    <div class="text">
+                        <span id="operation_output"></span>
+                        <span id="number_output">0</span>
+                    </div>
+                </section>
+                <section id="number_panel">
+                    <button class="button" data-number="7">7</button>
+                    <button class="button" data-number="8">8</button>
+                    <button class="button" data-number="9">9</button>
+                    <button class="button" data-number="4">4</button>
+                    <button class="button" data-number="5">5</button>
+                    <button class="button" data-number="6">6</button>
+                    <button class="button" data-number="1">1</button>
+                    <button class="button" data-number="2">2</button>
+                    <button class="button" data-number="3">3</button>
+                    <button class="button" data-number="0">0</button>
+                    <button class="button dot" data-number=".">.</button>
+
+                </section>
+                <section id="operation_panel">
+                    <button id="clear_all" data-number="C">c</button>
+                    <button class="button" data-number="+">+</button>
+                    <button class="button" data-number="-">-</button>
+                    <button class="button" data-number="*">×</button>
+                    <button class="button" data-number="/">÷</button>
+                </section>
+                <section id="execute_panel">
+                    <button id="execute" data-number="=">=</button>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
