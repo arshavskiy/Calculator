@@ -1,2 +1,2 @@
 # Calculator
-js practice 
+simple calculator js. mysql practice
